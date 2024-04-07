@@ -1,0 +1,425 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  /*body style*/
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+/* Add this to your existing CSS styles */
+
+header {
+    background-color: #021d2d!important;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+/*content style*/
+.content{
+    margin-top: 0.5%;
+}
+
+/*form style */
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    margin: auto;
+}
+
+textarea{
+    width: 100%;
+    min-height: 11rem;
+}
+
+#pretext{
+    margin-bottom: 2%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#restext{
+    max-width: 75%;
+    min-width: 75%;
+}
+
+.partTwo .items{
+    margin: 2% 2% 2% 2%;
+    border: #021d2d solid 1px;
+    padding: 2rem;
+    background-color: #a7a2a24a;
+}
+
+.partThree{
+    display: flex;
+    justify-content: center;
+
+}
+
+.itemsOne{
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    
+}
+
+.itemsTwo{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+.itemsFour{
+    display: flex;
+    margin: 2%;
+}
+
+.itemsTwo #blank{
+    max-width: 5%;
+    /* margin: 1% 1% 1% 1% */
+
+}
+
+.itemsThree{
+    display: flex;
+    margin: 2%;
+}
+
+label {
+    display: block;
+    margin: 0% 2% 0% 0%;
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 22%;
+    padding: 1.2%;
+    margin: 1% 1% 2% 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #FFBC00;
+    color: #fff;
+    padding: 1% 4%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+#clipboard{
+    margin: 3% 2% 2% 2%;
+    padding: 2% 2% 2% 2%;
+    max-height: 9rem;
+}
+
+button:hover {
+    background-color: #e7c978;
+}
+
+.bottom{
+    display: flex;
+    justify-content: start;
+    margin-top: 1%;
+}
+
+#reset{
+    background-color: #3b3b3e;
+    color: #fff;
+}
+
+#reset:hover{
+    background-color: #8a8a8b;
+    color: #fff;
+}
+
+
+/*COMPARE CONTENT PAGE STYLE*/
+
+.compare-content-up{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.compare-content-up-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 2% 2% 2%;
+    align-items: center;
+}
+
+#labelOne{
+    max-width: 20%;
+}
+
+.compare-content-up-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 2% 2% 2%;
+    align-items: center;
+}
+
+.text-compare{
+    margin: 2% 2% 2% 2%;
+    min-height: 25rem;
+    min-width:  50rem;
+}
+
+
+.compare-content-middle{
+    display: flex;
+}
+
+.compare-content-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compare-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 27vh;
+}
+
+.diff-line {
+    color: red;
+    display: contents;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2% 2% 0%;
+    width: 100%;
+
+}
+
+.cards-up{
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 1% 2% 0%;
+}
+
+.cards-down{
+    margin: auto;
+}
+
+.cards-down #uniqueWordsHeader{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.card {
+    font-family: 'Courier New', Courier, monospace; /* Add this line to set the font */
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    margin: 0% 2% 2% 6%;
+    width: 41vw;
+    min-height: 20vh;
+    max-height: 40vh;
+    overflow-y: auto;
+
+}
+
+#compareButton{
+    padding: 1rem 6rem;
+    margin: 1% 2%;
+}
+
+#clearButton{
+    padding: 1rem 4rem;
+    background-color: #3b3b3e;
+    color: #fff;
+}
+
+#clearButton:hover{
+    padding: 1rem 4rem;
+    background-color: #8a8a8b;
+    color: #fff;
+}
+
+/* COMPARE LISTS PAGE */
+
+#beautifyButton{
+    background-color: #125ca1;
+    padding: 1% 2%;
+    margin: 1%;
+
+}
+
+#beautifyButton:hover{
+    background-color: #125ca1;
+    padding: 1% 2%;
+    margin: 1%;
+
+}
+
+#compareListsButton{
+    padding: 1rem 6rem;
+    margin: 1% 2%;
+}
+
+/* Add this CSS to your existing styles */
+
+#textOne, #textTwo {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    color: #000000;
+    width: 41vw;
+    min-height: 34rem;
+    margin: 2% 2% 2% 9%;
+}
+
+#textOne::selection, #textTwo::selection {
+    background: #ebe776; /* Red background for selected text */
+}
+
+#textOne::placeholder, #textTwo::placeholder {
+    color: #975f38; /* Placeholder text color */
+}
+
+#fileInputOne, #fileInputTwo{
+    margin: 0% 2% 0% 36%;
+    background-color: wheat;
+    padding: 2%;
+}
+
+.textOne{
+    display: flex;
+}
+
+.textOne-left{
+    margin: 0%;
+}
+
+.textOne-right{
+    margin: 0%;
+}
+
+.diff-word {
+    background-color: yellow; /* Change this to your desired highlighting color */
+    font-weight: bold;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+/* START logPartConnect PAGE */
+
+.inputPart{
+    border: 2px dashed rgb(204, 204, 204);
+    width: 60vw;
+    text-align: center;
+    margin: 2% 2% 0% 20%;
+}
+
+#processButton{
+    width: 20vw;
+    text-align: center;
+    margin: 2% 2% 0% 40%;
+}
+
+.jsonFileInput{
+    width: 50%;
+    margin: 0% 2% 0% 25%;
+}
+
+#copyButtonJSON{
+    width: 20vw;
+    text-align: center;
+    margin: 1% 2% 2% 40%;
+}
+
+.upperLogsPartsConnect{
+    margin: 1% 2% 0% 2%;
+}
+
+#clearFileButton{
+    width: 20vw;
+    text-align: center;
+    margin: 1% 2% 0% 40%;
+    background-color: #3b3b3e;
+
+}
+
+#clearFileButton:hover{
+    width: 20vw;
+    text-align: center;
+    margin: 1% 2% 0% 40%;
+    background-color: #7e7e81;
+
+}
+
+#prettifyButtonJSON{
+    width: 20vw;
+    text-align: center;
+    margin: 1% 2% 2% 40%;
+}
+
+#dropArea{
+    padding: 5%;
+}
+
+/* END logPartConnect PAGE */

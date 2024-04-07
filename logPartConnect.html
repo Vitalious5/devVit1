@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>String Tools - Line Breaks</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/textIcon.png">
+    <title>JSON Message Concatenator</title>
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <div class="navbar">
+        <header>
+            <h1>String Tools</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Line Breaks</a></li>
+                    <li><a href="compareJSON.html">Compare JSON</a></li>
+                    <li><a href="logPartConnect.html">LogPartsConnect</a></li>
+                    <li><a href="restApiTools.html">REST API tools</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="upperLogsPartsConnect">
+       <span>Created by Vitaly Sidorenko</span>
+    </div>
+    <!-- body -->
+    <div class="inputPart">
+        <div id="dropArea">
+            In Coralogix, select the "message" column only for the logs, then extract the data as JSON file
+            <br>
+            <br>
+            Drag and drop the JSON file here or click to select a file.
+            <br>
+            <br>
+            <input type="file" id="fileInput">
+        </div>
+    </div>
+    <div>
+        <button id="processButton" disabled>Process File</button>
+        <span id="actionStatus"></span>
+    </div>
+
+    <div>
+        <button id="prettifyButtonJSON">Format JSON</button>
+        <span id="prettifyStatus"></span>
+    </div>
+    
+
+    
+    <label for="pretext">Result Preview:</label>
+    <div class="jsonFileInput">
+        <textarea id="resultBox" rows="4" cols="50" readonly></textarea>
+    </div>
+
+    <div>
+        <button id="clearFileButton">Clear</button>
+        <span id="clearStatus"></span>
+    </div>
+    
+    <div>
+        <button id="copyButtonJSON" disabled>Copy to Clipboard</button>
+        <span id="copyStatus"></span>
+    </div>
+    
+    <script src="logPartConnect.js" defer></script>
+</body>
+</html>

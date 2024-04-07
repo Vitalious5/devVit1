@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>String Tools - Line Breaks</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/textIcon.png">
+
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <div class="navbar">
+        <header>
+            <h1>String Tools</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Line Breaks</a></li>
+                    <li><a href="compareJSON.html">Compare JSON</a></li>
+                    <li><a href="logPartConnect.html">LogPartsConnect</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="upperLogsPartsConnect">
+        <span>Created by Vitaly Sidorenko</span>
+     </div>
+
+    <div class="content">
+        <form>
+            <div class="partOne">
+                <label for="pretext">Text to edit:</label>
+                <textarea type="text" id="pretext" name="pretext" spellcheck="false"></textarea>
+            </div>
+            
+            <div class="partTwo">
+                <label>Choose Settings:</label>
+                <div class="items">
+                    <div class="itemsOne">
+                        <input type="radio" id="spaceToComma" name="blank">
+                        <label for="blank">Replace <b>line breaks</b> with <b>comma</b></label>
+                    </div>
+                    <div class="itemsOne">
+                        <input type="radio" id="commasToLineBreaks" name="blank">
+                        <label for="blank">Replace <b>commas</b> with <b>line breaks</b></label>
+                    </div>
+                    <div class="itemsOne">
+                        <input type="radio" id="breakToSpcae" name="blank">
+                        <label for="blank">Replace <b>line breaks</b> with <b>blank space</b></label>
+                    </div>
+                    <div class="itemsOne">
+                        <input type="radio" id="commaToSpace" name="blank">
+                        <label for="blank">Replace <b>commas</b> with <b>blank space</b></label>
+                    </div>
+                    <div class="itemsTwo">
+                        <input type="radio" id="custom" name="blank" value="blank">
+                        <label for="text">Replace <b>line breaks</b> with <b>custom text:</b></label>
+                        <input type="text" id="customText" name="custom">
+                    </div>
+                    <div class="itemsTwo">
+                        <input type="radio" id="customWords" name="blank" value="blank">
+                        <label for="text">Add<span><input type="text" id="preWord" name="custom"></span>before each word, and add<span><input type="text" id="postWord" name="custom"></span>after each word</label>
+                        
+                    </div>
+                    <div class="itemsThree">
+                        <input type="checkbox" id="removeDuplicates" name="removeDuplicates">
+                        <label for="removeDuplicates">Remove <strong>duplicate lines</strong></label>
+                    </div>
+                    <div class="itemsFour">
+                        <input type="checkbox" id="add1" name="add1">
+                        <label for="add1">Insert into 'IN ( )' - for SQL query</label>
+                    </div>
+
+                    <button id="execute" type="submit">Excute</button>
+                    <button id="reset" type="submit">Reset</button>
+                </div>
+            </div>
+            <label for="pretext">Result:</label>
+            <div class="partThree">
+                <textarea type="text" id="restext" name="restext"></textarea>
+                <button type="submit" id="clipboard">Copy to clip board</button>
+            </div>
+        </form>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bottom">
+        </div>
+    </footer>
+
+    <script src="tools.js" defer></script>
+</body>
+</html>

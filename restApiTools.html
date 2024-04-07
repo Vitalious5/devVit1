@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>String Tools - Line Breaks</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/textIcon.png">
+    <title>Link Builder</title>
+
+    </head>
+    <body>
+        <!-- Header with Navbar -->
+        <div class="navbar">
+            <header>
+                <h1>String Tools</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Line Breaks</a></li>
+                        <li><a href="compareJSON.html">Compare JSON</a></li>
+                        <li><a href="logPartConnect.html">LogPartsConnect</a></li>
+                        <li><a href="restApiTools.html">REST API tools</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="upperLogsPartsConnect">
+            <span>Created by Vitaly Sidorenko</span>
+        </div>
+        <!-- body -->
+        <h2>Link Builder</h2>
+
+        <div>
+        <label for="environment">Environment:</label>
+        <input type="text" id="environment" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="response_type">Response Type:</label>
+        <input type="text" id="response_type" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="state">State:</label>
+        <input type="text" id="state" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="code_challenge">Code Challenge:</label>
+        <input type="text" id="code_challenge" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="code_challenge_method">Code Challenge Method:</label>
+        <input type="text" id="code_challenge_method" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="scope">Scope:</label>
+        <input type="text" id="scope" oninput="updateLink()">
+        </div>
+        <div>
+        <label for="redirect_uri">Redirect URI:</label>
+        <input type="text" id="redirect_uri" oninput="updateLink()">
+        </div>
+
+        <h3>Result Link:</h3>
+        <a id="resultLink" href="">Generated Link Will Appear Here</a>
+
+        <script src="logPartConnect.js" defer></script>
+    </body>
+</html>

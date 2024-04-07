@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>String Tools - Compare Text</title>
+</head>
+<body>
+
+    <!-- Header with Navbar -->
+    <div class="navbar">
+        <header>
+            <h1>String Tools</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Line Breaks</a></li>
+                    <li><a href="compareJSON.html">Compare JSON</a></li>
+                    <li><a href="logPartConnect.html">LogPartsConnect</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="upperLogsPartsConnect">
+        <span>Created by Vitaly Sidorenko</span>
+     </div>
+
+    <div class="heading">
+        <h2>Insert JSON manualy or upload a file </h2>
+        <br>
+        <h4>Accepted files: .txt, .JSON, .CSV</h4>
+    </div>
+    <div class="compare-content-up">
+        <div class="compare-content-left">
+            <label for="textOne">Text 1:</label>
+            <textarea id="textOne" name="textOne" spellcheck="false"></textarea>
+            <input type="file" id="fileInputOne" accept=".txt, .json, .csv" ondrop="handleDrop(event)">
+        </div>
+        
+        <div class="compare-content-right">
+            <label for="textTwo">Text 2:</label>
+            <textarea id="textTwo" name="textTwo" spellcheck="false"></textarea>
+            <input type="file" id="fileInputTwo" accept=".txt, .json, .csv" ondrop="handleDrop(event)">
+        </div>
+    </div>
+
+    <div class="compare-content-down">
+        <button id="compareListsButton" type="submit">Compare</button>
+        <button id="beautifyButton">Prettify JSON</button>
+        <button id="clearButton" type="submit">Clear</button>
+        <div class="cards">
+            <div class="cards-up">
+                <div id="newCard"></div>
+                <div id="originalCard"></div>
+            </div>
+            <div class="cards-down">
+                <!-- New Card for Unique Words in List 2 -->
+                <h3 id="uniqueWordsHeader">Unique Words in Text 2:</h3>
+                <div id="uniqueWordsCard" class="card" style="display: none;">
+                    <!-- Display unique words here -->
+                    <p></p> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="compare-bottom">
+            <p>Created by Vitaly Sidorenko <span id="copyright-year-compare-page"></span></p>
+        </div>
+    </footer>
+
+    <script src="json-tools.js" defer></script>
+</body>
+</html>
